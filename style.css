@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(130deg, rgb(187, 42, 180) 1%, rgb(204, 13, 13), rgb(49, 35, 75));
+    background-attachment: fixed;
+}
+h1{
+    margin: 40px;
+    text-align: center;
+    background-image: linear-gradient( to left, transparent 1%, rgb(240, 248, 255), transparent 100%);
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 2.2em;
+    color: rgb(8, 8, 43);
+    line-height: 1.5em;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.705);
+}
+hr{
+    margin: 10px;
+    height: 1px;
+    border: none;
+    background-image: linear-gradient( to left, transparent 1%, rgba(54, 6, 117, 0.253), transparent 100%);
+}
+
+main{
+    margin: 35px auto 100px auto;
+    padding: 10px;
+    max-width: 730px;
+    min-height: 300px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.986);
+    border-radius: 3px;
+    box-shadow: 5px 5px 3px rgba(22, 8, 73, 0.267);
+}
+h2{
+    text-align: center;
+    font-size: 1.9em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+}
+#outList{
+    padding: 20px;
+    box-sizing: border-box;
+}
+#taskInput{
+    width: 80%;
+    height: 2.2em;
+    display: inline-block;
+    padding: 2px;
+    box-sizing: border-box;
+    text-indent: 1em;
+}
+button{
+    background-color: rgb(255, 0, 21);
+    color: rgb(255, 255, 255);
+    width: 18%;
+    min-width: max-content;
+    height: 2.2em;
+    border-radius: 3px;
+}
+button:active{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 0, 0, 0.774);
+}
+p#warning{
+    font-family: monospace;
+    color: rgb(200, 0, 0);
+    margin: 10px;
+    display: none;
+}
+ul{
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+li{
+    line-height: 1.9em;
+    font-family: 'Segoe UI', sans-serif;
+    list-style: none;
+    border: 1px dashed rgba(62, 60, 71, 0.288);
+    border-radius: 4px;
+    padding: 5px;
+    transition: 1.3s;
+}
+li:hover{
+    background-color: rgba(16, 5, 44, 0.075);
+}
+li>input{
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+}
+li>a{
+    text-decoration: none;
+    color: rgb(228, 0, 0);
+}
+
+footer{
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.774);
+    text-align: right;
+    padding: 5px 10px 5px 5px;
+    box-sizing: border-box;
+    box-shadow: 0 -3px 3px rgba(22, 8, 73, 0.267);
+    transition: 0.4s;
+}
+p#credits{
+    font-family: monospace;
+    font-size: 1.2em;
+}
+#credits>a{
+    font-family: monospace;
+    text-decoration: none;
+    color: rgb(6, 63, 77);
+    font-weight: bold;
+    transition: 4s;
+}
+footer:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+}
+#credits>a:hover{
+    color: rgb(252, 252, 30);
+    text-shadow: 0 0 5px rgb(238, 255, 0);
+    transition: 0.3s;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task lisk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="welcome">Welcome</h1>
+    <hr>
+
+    <main>
+        <h2>Task List</h2>
+        <div id="outList">
+            <input id="taskInput" type="text" placeholder="Type here" oninput="tasker(this);" >
+            <button id="add" onclick="addTask()">Add</button>
+            <p id ="warning">Type something</p>
+            <ul id="list">
+                <li><input type="checkbox" value=""> Visit author <a href="https://github.com/Gus1331" target="_blank" rel="author">GitHub</a>.</li>
+                <li><input type="checkbox" value=""> Create my first task</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p id="credits">
+            Made by: <a href="https://github.com/Gus1331" target="_blank" rel="author">Gustavo Oliveira</a>
+        </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
